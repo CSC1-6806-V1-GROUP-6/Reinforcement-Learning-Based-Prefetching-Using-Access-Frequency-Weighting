@@ -42,3 +42,31 @@ Make sure the following packages and tools are installed:
 0. Install necessary prerequisites
 ```bash
 sudo apt install perl
+
+1. Clone the GitHub repo
+```bash
+git clone https://github.com/CMU-SAFARI/Pythia.git
+
+2. Clone the bloomfilter library inside Pythia home directory
+```bash
+cd Pythia
+git clone https://github.com/mavam/libbf.git libbf
+
+3. Build bloomfilter library. This should create the static libbf.a library inside build directory
+```bash
+cd libbf
+mkdir build && cd build
+cmake ../
+make clean && make
+
+4. Build Pythia for single/multi core using build script. This should create the executable inside bin directory.
+```bash
+cd $PYTHIA_HOME
+# ./build_champsim.sh <l1_pref> <l2_pref> <llc_pref> <ncores>
+./build_champsim.sh multi multi no 1
+
+Please use build_champsim_highcore.sh to build ChampSim for more than four cores.
+
+5.Set appropriate environment variables as follows:
+```bash
+source setvars.sh
