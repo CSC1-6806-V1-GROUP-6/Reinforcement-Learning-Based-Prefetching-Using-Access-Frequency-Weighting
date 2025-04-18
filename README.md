@@ -104,3 +104,28 @@ Our experimental process is divided into two main stages: (1) running the experi
    - `exe` : the full path of the executable to run  
    - `tlist` : contains trace definitions  
    - `exp` : contains knobs of the experiments to run
+3. Create experiments as follows. Please make sure the paths used in tlist and exp files are appropriate.
+   ``` bash
+   cd $PYTHIA_HOME/experiments/
+   perl ../scripts/create_jobfile.pl --exe $PYTHIA_HOME/bin/perceptron-multi-multi-no-ship-1core --tlist MICRO21_1C.tlist --exp MICRO21_1C.exp --local 1 > jobfile.sh
+   ```
+4. Go to a run directory (or create one) inside experiements to launch runs in the following way:
+   ``` bash
+   cd experiments_1C
+   source ../jobfile.sh
+   ```
+5. If your system uses Slurm to manage multiple jobs on a compute cluster, be sure to pass `--local 0` to `create_jobfile.pl`.
+
+## Rolling-up Statistics
+1. To aggregate statistics in bulk, use the `scripts/rollup.pl` script.
+2. This script requires the following three arguments:
+   - `tlist`: defines the traces
+   - `exp`: specifies experiment configurations
+   - `mfile`: lists the statistic names and the method used for reduction
+3. Rollup statistics as follows. Make sure the file paths provided in the `tlist` and `exp` files are correct.
+   ``` bash
+   cd experiements_1C/
+   perl ../../scripts/rollup.pl --tlist ../MICRO21_1C.tlist --exp ../MICRO21_1C.exp --mfile ../rollup_1C_base_config.mfile > rollup.csv
+   ```
+4. Open the `rollup.csv` file in your preferred data analysis tool (such as Python Pandas, Excel, or Numbers) to explore and interpret the results.
+
