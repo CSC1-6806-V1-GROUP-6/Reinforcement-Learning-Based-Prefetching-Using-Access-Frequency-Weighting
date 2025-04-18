@@ -39,4 +39,6 @@ Make sure the following packages and tools are installed:
    2. matplotlib
 
 ## Installation
-Clone the modified Pythia framework:
+0. Install necessary prerequisites
+```bash
+sudo apt install perl
