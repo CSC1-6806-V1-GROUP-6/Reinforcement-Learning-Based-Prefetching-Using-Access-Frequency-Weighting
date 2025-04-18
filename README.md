@@ -91,15 +91,15 @@ cd $PYTHIA_HOME/traces
 md5sum -c ../scripts/artifact_traces.md5
 ```
 3. Download the Ligra and PARSEC traces from these repositories:
-[Ligra] (https://doi.org/10.5281/zenodo.14267977)
-[PARSEC 2.1] (https://doi.org/10.5281/zenodo.14268118)
+[Ligra](https://doi.org/10.5281/zenodo.14267977)
+[PARSEC 2.1](https://doi.org/10.5281/zenodo.14268118)
 
-4. If the traces are downloaded in some other path, please change the full path in ```bash experiments/MICRO21_1C.tlist ``` and ```bash experiments/MICRO21_4C.tlist``` accordingly.
+4. If the traces are downloaded in some other path, please change the full path in `experiments/MICRO21_1C.tlist` and `bash experiments/MICRO21_4C.tlist` accordingly.
 
 ## Experimental Workflow
 Our experimental process is divided into two main stages: (1) running the experiments and (2) aggregating statistics from the results
 ## Launching Experiments
-1. To create necessary experiment commands in bulk, we will use ```bash scripts/create_jobfile.pl```
+1. To create necessary experiment commands in bulk, we will use `scripts/create_jobfile.pl`
 2. `create_jobfile.pl` requires three necessary arguments:
    - `exe` : the full path of the executable to run  
    - `tlist` : contains trace definitions  
