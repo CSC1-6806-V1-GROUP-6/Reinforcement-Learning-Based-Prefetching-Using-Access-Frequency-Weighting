@@ -1,6 +1,6 @@
 # Reinforcement-Learning-Based-Prefetching-Using-Access-Frequency-Weighting
 ## Table of Contents
-1. [What is Reinforcement Learning-Based Prefetching Using Access Frequency Weighting?](#what-is-reinforcement-learning--based-prefetching-using-access-frequency-weighting?)
+1. [What is Reinforcement Learning Based Prefetching Using Access Frequency Weighting?](#what-is-reinforcement-learning-based-prefetching-using-access-frequency-weighting)
 2. [About the Framework](#about-the-framework)
 3. [Prerequisites](#prerequisites)
 4. [Installation](#installation)
@@ -16,7 +16,7 @@
 11. [Contact](#contact)
 12. [Acknowledgements](#acknowledgements)
 
-## What is Reinforcement Learning-Based Prefetching Using Access Frequency Weighting?
+## What is Reinforcement Learning Based Prefetching Using Access Frequency Weighting?
 This project introduces Pythia-AF, an enhanced version of the RL-based Pythia prefetcher. It applies Access Frequency Weighting (AFW) to guide prefetch decisions using the recurrence of memory access patterns. By modifying the reward function to prioritize frequent accesses, the prefetcher becomes more accurate, timely, and efficient—reducing cache pollution and memory bandwidth waste.
 
 
