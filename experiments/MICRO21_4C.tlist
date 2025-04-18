@@ -1,0 +1,2 @@
+NAME=MP_mix_139
+TRACE=$(PYTHIA_HOME)/traces/ligra_BFSCC.com-lj.ungraph.gcc_6.3.0_O3.drop_750M.length_250M.champsimtrace.xz $(PYTHIA_HOME)/traces/ligra_MIS.com-lj.ungraph.gcc_6.3.0_O3.drop_5000M.length_250M.champsimtrace.xz $(PYTHIA_HOME)/traces/605.mcf_s-472B.champsimtrace.xz $(PYTHIA_HOME)/traces/623.xalancbmk_s-10B.champsimtrace.xz

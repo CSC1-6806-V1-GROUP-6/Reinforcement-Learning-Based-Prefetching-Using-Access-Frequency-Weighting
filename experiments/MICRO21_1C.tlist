@@ -1,0 +1,4 @@
+NAME=cassandra_phase5_core0
+TRACE=$(PYTHIA_HOME)/traces/cassandra_phase5_core0.trace.xz
+KNOBS=--knob_cloudsuite=true --warmup_instructions=100000000 --simulation_instructions=150000000
+
