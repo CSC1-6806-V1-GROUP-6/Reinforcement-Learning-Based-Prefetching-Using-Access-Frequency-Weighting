@@ -1,6 +1,6 @@
 # Reinforcement-Learning-Based-Prefetching-Using-Access-Frequency-Weighting
 ## Table of Contents
-1. [What is Reinforcement Learning-Based Prefetching Using Access Frequency Weighting?](#what-is-reinforcement-learning-based-prefetching-using-access-frequency-weighting?)
+1. [What is Reinforcement Learning-Based Prefetching Using Access Frequency Weighting?](#what-is-reinforcement-learning--based-prefetching-using-access-frequency-weighting?)
 2. [About the Framework](#about-the-framework)
 3. [Prerequisites](#prerequisites)
 4. [Installation](#installation)
