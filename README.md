@@ -129,3 +129,17 @@ Our experimental process is divided into two main stages: (1) running the experi
    ```
 4. Open the `rollup.csv` file in your preferred data analysis tool (such as Python Pandas, Excel, or Numbers) to explore and interpret the results.
 
+## HDL Implementation
+Although our work primarily focused on simulation and performance evaluation, we kept hardware implementation in mind throughout. The enhancement we proposed—adding Access Frequency Weighting (AFW) to the Pythia prefetcher—requires only a tiny amount of additional hardware (about 0.04 KB per core). This was achieved using a simple counter vector built into Pythia's existing structures.
+The overall storage overhead remains very low at 25.5 KB per core, and synthesis results show the design would add just 1.03% area overhead on a desktop-class processor. This makes it a practical option for real-world hardware deployment with minimal changes to the original architecture.
+
+## Code Walkthrough
+The enhanced version of Pythia integrates Access Frequency Weighting (AFW) into its reinforcement learning-based prefetcher. Here's a quick overview of the key component:
+inc/feature_knowledge.h & src/feature_knowledge.cc
+- These files are responsible for defining and processing program features that the reinforcement learning engine uses to make prefetching decisions. As 
+  part of our Access Frequency Weighting (AFW) enhancement, we modified these files to help track how often specific memory offsets are accessed.
+- We introduced a mechanism that monitors access patterns and integrates frequency data as part of the reward calculation during training. This allows the 
+  prefetcher to prioritize memory addresses that are accessed more frequently, improving learning efficiency and reducing unnecessary prefetches.
+- If you're looking to extend AFW or add new features, this is the place to do it. Start by updating the FeatureType enum in feature_knowledge.h, then 
+  implement the logic to extract or compute your new feature in feature_knowledge.cc.
+
