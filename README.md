@@ -76,3 +76,5 @@ Please use build_champsim_highcore.sh to build ChampSim for more than four cores
 ```bash
 source setvars.sh
 ```
+## Preparing Traces
+
