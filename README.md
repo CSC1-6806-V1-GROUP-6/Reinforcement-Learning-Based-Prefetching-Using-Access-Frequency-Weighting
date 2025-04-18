@@ -145,3 +145,13 @@ The enhanced version of Pythia integrates Access Frequency Weighting (AFW) into 
 - If you're looking to extend AFW or add new features, this is the place to do it. Start by updating the FeatureType enum in feature_knowledge.h, then 
   implement the logic to extract or compute your new feature in feature_knowledge.cc.
 
+## Contact
+Feel free to reach out if you have questions or ideas!
+Keerthana Palani – k.palani@student.fdu.edu
+Sai Ajith Reddy Bureddy – s.bureddy@student.fdu.edu
+Mengfei Liu – m.liu1@student.fdu.edu
+Xinyi Wang – x.wang7@student.fdu.edu
+Shuihan Jiang – s.jiang1@student.fdu.edu
+
+
+
