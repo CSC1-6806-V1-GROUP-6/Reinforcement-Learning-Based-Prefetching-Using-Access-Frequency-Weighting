@@ -77,4 +77,30 @@ Please use build_champsim_highcore.sh to build ChampSim for more than four cores
 source setvars.sh
 ```
 ## Preparing Traces
+1. Use the download_traces.pl perl script to download all traces, except Ligra and PARSEC.
+```bash
+mkdir $PYTHIA_HOME/traces/
+cd $PYTHIA_HOME/scripts/
+perl download_traces.pl --csv artifact_traces.csv --dir ../traces/
+```
+Note: The script should download 138 traces. Please check the final log for any incomplete downloads.
 
+2. Once the trace download completes, please verify the checksum as follows. Please make sure all traces pass the checksum test.
+```bash
+cd $PYTHIA_HOME/traces
+md5sum -c ../scripts/artifact_traces.md5
+```
+3. Download the Ligra and PARSEC traces from these repositories:
+[Ligra] (https://doi.org/10.5281/zenodo.14267977)
+[PARSEC 2.1] (https://doi.org/10.5281/zenodo.14268118)
+
+4. If the traces are downloaded in some other path, please change the full path in ```bash experiments/MICRO21_1C.tlist ``` and ```bash experiments/MICRO21_4C.tlist``` accordingly.
+
+## Experimental Workflow
+Our experimental process is divided into two main stages: (1) running the experiments and (2) aggregating statistics from the results
+## Launching Experiments
+1. To create necessary experiment commands in bulk, we will use ```bash scripts/create_jobfile.pl```
+2. `create_jobfile.pl` requires three necessary arguments:
+   - `exe` : the full path of the executable to run  
+   - `tlist` : contains trace definitions  
+   - `exp` : contains knobs of the experiments to run
