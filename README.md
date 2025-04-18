@@ -135,7 +135,9 @@ The overall storage overhead remains very low at 25.5 KB per core, and synthesis
 
 ## Code Walkthrough
 The enhanced version of Pythia integrates Access Frequency Weighting (AFW) into its reinforcement learning-based prefetcher. Here's a quick overview of the key component:
-inc/feature_knowledge.h & src/feature_knowledge.cc
+
+**inc/feature_knowledge.h & src/feature_knowledge.cc**
+
 - These files are responsible for defining and processing program features that the reinforcement learning engine uses to make prefetching decisions. As 
   part of our Access Frequency Weighting (AFW) enhancement, we modified these files to help track how often specific memory offsets are accessed.
 - We introduced a mechanism that monitors access patterns and integrates frequency data as part of the reward calculation during training. This allows the 
