@@ -147,11 +147,20 @@ The enhanced version of Pythia integrates Access Frequency Weighting (AFW) into 
 
 ## Contact
 Feel free to reach out if you have questions or ideas!
-Keerthana Palani – k.palani@student.fdu.edu
-Sai Ajith Reddy Bureddy – s.bureddy@student.fdu.edu
-Mengfei Liu – m.liu1@student.fdu.edu
-Xinyi Wang – x.wang7@student.fdu.edu
-Shuihan Jiang – s.jiang1@student.fdu.edu
+
+- Keerthana Palani – k.palani@student.fdu.edu
+- Sai Ajith Reddy Bureddy – s.bureddy@student.fdu.edu
+- Mengfei Liu – m.liu1@student.fdu.edu
+- Xinyi Wang – x.wang7@student.fdu.edu
+- Shuihan Jiang – s.jiang1@student.fdu.edu
+
+## Acknowledgements
+This project was developed as part of the Capstone for the Master of Science in Applied Computer Science program at Fairleigh Dickinson University, Vancouver Campus.
+We’d like to sincerely thank:
+- Our professors and mentors for their valuable guidance
+- The creators of the Pythia Prefetching Framework
+- Benchmark providers: SPEC 2017 and CloudSuite
+- The open-source community for tools like Python, Pandas, and Matplotlib, which helped power our analysis and visualization
 
 
 
